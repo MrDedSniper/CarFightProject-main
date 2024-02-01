@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ExitGames.Client.Photon;
 using Photon.Pun;
 using PlayFab;
 using PlayFab.ClientModels;
@@ -16,7 +17,7 @@ internal class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        PhotonView photonView = GetComponent<PhotonView>();
+        photonView = GetComponent<PhotonView>();
         
         _currentHealth = _maxHealth;
         
@@ -48,19 +49,26 @@ internal class PlayerHealth : MonoBehaviour
             //Die();
         }
         
-        PlayFabClientAPI.UpdateUserData(new UpdateUserDataRequest()
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable()
+            {
+                {"HP", _currentHealth.ToString()}
+                
+            });
+        
+        
+        /*PlayFabClientAPI.UpdateUserData(new UpdateUserDataRequest()
         {
             Data = new Dictionary<string, string>()
             {
                 { "HP", _currentHealth.ToString() },
             },
-        }, result => Debug.Log("HP updated successfully"), error => Debug.LogError(error.GenerateErrorReport()));
+        }, result => Debug.Log("HP updated successfully"), error => Debug.LogError(error.GenerateErrorReport()));*/
         
         photonView.RPC("UpdateHealth", RpcTarget.Others, _currentHealth);
 
     }
     
-    [PunRPC] void UpdateHealth(float health)
+    [PunRPC] internal void UpdateHealth(float health)
     {
         _currentHealth = health;
         _healthbarBevahior.UpdateHealtbar(_currentHealth, _maxHealth);
