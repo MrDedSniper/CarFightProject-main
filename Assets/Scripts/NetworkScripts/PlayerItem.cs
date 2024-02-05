@@ -1,11 +1,17 @@
-using System;
+using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
+using PlayFab;
+using PlayFab.ClientModels;
 
+public interface IObjectFinder
+{
+   LobbyManager FindLobbyManager();
+}
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
    [SerializeField] private TMP_Text _playerName;
@@ -14,22 +20,70 @@ public class PlayerItem : MonoBehaviourPunCallbacks
    [SerializeField] private GameObject _leftArrowButton;
    [SerializeField] private GameObject _rightArrowButton;
 
+   private LobbyManager _lobbyManager;
+
    private Hashtable playerProperties = new Hashtable();
    public Image playerCar;
-   public Sprite[] avatars;
+   public List<Sprite> avatars = new List<Sprite>();
 
    private Player player;
 
+   bool isRCItemInInventory = false;
+
+   public LobbyManager FindLobbyManager()
+   {
+      if (_lobbyManager == null)
+      {
+         _lobbyManager = FindObjectOfType<LobbyManager>();
+      }
+      return _lobbyManager;
+   }
+   
    private void Start()
    {
       backgroundImage = GetComponent<Image>();
+      playerProperties = PhotonNetwork.LocalPlayer.CustomProperties;
+    
+      CheckForRCItemInInventory();
+
+      // Устанавливаем 0 индекс аватара при создании объекта
+      if (!playerProperties.ContainsKey("playerCar"))
+      {
+         playerProperties["playerCar"] = 0;
+         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
+         UpdatePlayerCarImage();
+      }
+   }
+
+   private void CheckForRCItemInInventory()
+   {
+      PlayFabClientAPI.GetUserInventory(new GetUserInventoryRequest(), OnGetInventorySuccess, OnGetInventoryFailure);
+   }
+
+   private void OnGetInventorySuccess(GetUserInventoryResult result)
+   {
+      isRCItemInInventory = result.Inventory.Exists(item => item.ItemId == "RC");
+
+      if (isRCItemInInventory)
+      {
+         Debug.Log("RC item found in inventory!");
+      }
+      else
+      {
+         Debug.Log("RC item not found in inventory.");
+         avatars.RemoveAt(5);
+      }
+   }
+
+   private void OnGetInventoryFailure(PlayFabError error)
+   {
+      Debug.Log("Failed to get inventory: " + error.ErrorMessage);
    }
 
    public void SetPlayerInfo(Player _player)
    {
       _playerName.text = _player.NickName;
       player = _player;
-      UpdatePlayerItem(player);
    }
 
    public void ApplyLocalChanges()
@@ -41,60 +95,34 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
    public void OnClickLeftArrow()
    {
-      if ((int)playerProperties["playerCar"] == 0)
+      if (playerProperties.ContainsKey("playerCar"))
       {
-         playerProperties["playerCar"] = avatars.Length - 1;
+         int currentCarIndex = (int)playerProperties["playerCar"];
+         playerProperties["playerCar"] = (currentCarIndex - 1 + avatars.Count) % avatars.Count;
+         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
+
+         UpdatePlayerCarImage();
       }
-      
-      else
-      {
-         playerProperties["playerCar"] = (int)playerProperties["playerCar"] - 1;
-      }
-      
-      PhotonNetwork.SetPlayerCustomProperties(playerProperties);
    }
-   
+
    public void OnClickRightArrow()
    {
-      if ((int)playerProperties["playerCar"] == -1)
+      if (playerProperties.ContainsKey("playerCar"))
       {
-         playerProperties["playerCar"] = 0;
-      }
-      
-      else
-      {
-         playerProperties["playerCar"] = (int)playerProperties["playerCar"] + 1;
-      }
+         int currentCarIndex = (int)playerProperties["playerCar"];
+         playerProperties["playerCar"] = (currentCarIndex + 1) % avatars.Count;
+         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
 
-      PhotonNetwork.SetPlayerCustomProperties(playerProperties);
-   }
-
-   public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable playerProperties)
-   {
-      if (player == targetPlayer)
-      {
-         UpdatePlayerItem(targetPlayer);
+         UpdatePlayerCarImage();
       }
    }
 
-   private void UpdatePlayerItem(Player targetPlayer)
+   private void UpdatePlayerCarImage()
    {
-      if (player.CustomProperties.ContainsKey("playerCar"))
+      if (playerProperties.ContainsKey("playerCar"))
       {
-         int carIndex = (int) player.CustomProperties["playerCar"];
-         if (carIndex >= 0 && carIndex < avatars.Length)
-         {
-            playerCar.sprite = avatars[carIndex];
-            playerProperties["playerCar"] = carIndex;
-         }
-         else
-         {
-            playerProperties["playerCar"] = 0;
-         }
-      }
-      else
-      {
-         playerProperties["playerCar"] = 0;
+         int carIndex = (int)playerProperties["playerCar"];
+         playerCar.sprite = avatars[carIndex];
       }
    }
 }

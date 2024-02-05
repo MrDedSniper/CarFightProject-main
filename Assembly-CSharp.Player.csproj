@@ -62,7 +62,9 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\UIScrap.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\ThrowObject.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\PrefabButtonController.cs" />
      <Compile Include="Assets\Scripts\GameSystems\GameManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\CarSound.cs" />
@@ -88,6 +90,7 @@
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGColliderEnabler.cs" />
      <Compile Include="Assets\Scripts\CarBehavior\CarController.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\CameraFreeRoam.cs" />
+     <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\HealthbarBevahior.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -95,6 +98,7 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ProductItemUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
@@ -110,6 +114,7 @@
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\ColumnBreakScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\LobbyManager.cs" />
+     <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\WeaponsScripst\BulletBehavior.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGBuilder.cs" />
@@ -118,19 +123,23 @@
      <Compile Include="Assets\Scripts\NetworkScripts\RoomItem.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\DoNotRotate.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\CreateAccountWindow.cs" />
      <Compile Include="Assets\Scripts\GameSystems\MusicPlayer.cs" />
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\ColumnVariableBreakScript.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ProductData.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\DamageOutputScript.cs" />
      <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ScrapCurrency.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\UIHealthbar.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ShopBehavior.cs" />
      <Reference Include="UnityEngine">
      <HintPath>F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
      </Reference>

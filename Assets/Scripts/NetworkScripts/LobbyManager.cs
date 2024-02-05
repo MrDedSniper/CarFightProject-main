@@ -13,10 +13,17 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     
     [SerializeField] private TMP_InputField _roomCreationInput;
     [SerializeField] private TMP_InputField _roomSearchInput;
+    
     [SerializeField] private GameObject _lobbyPanel;
     [SerializeField] private GameObject _roomPanel;
+    [SerializeField] private GameObject _shopPanel;
+    
     [SerializeField] private TMP_Text _roomName;
     [SerializeField] private TMP_Text _privateRoomText;
+    [SerializeField] private TMP_Text _levelText;
+    [SerializeField] private TMP_Text _coinsText;
+
+    private bool _isShopOpen = false;
 
     public RoomItem roomItemPrefab;
     private List<RoomItem> roomItemsList = new List<RoomItem>();
@@ -30,9 +37,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public PlayerItem playerItemPrefab;
     public Transform playerItemParent;
 
-    public GameObject playButton;
-    public GameObject closeRoomButton;
-    public GameObject copyRoomNameButton;
+    
+    [SerializeField] private GameObject _playButton;
+    [SerializeField] private GameObject _closeRoomButton;
+    [SerializeField] private GameObject _copyRoomNameButton;
+    [SerializeField] private GameObject _shopButton;
 
     [SerializeField] private Toggle _isPrivateRoom;
     string buff = "";
@@ -75,10 +84,25 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.CurrentRoom.IsOpen)
         {
             _privateRoomText.gameObject.SetActive(true);
-            copyRoomNameButton.gameObject.SetActive(true);
+            _copyRoomNameButton.gameObject.SetActive(true);
             PhotonNetwork.CurrentRoom.IsOpen = false;
-            closeRoomButton.GetComponentInChildren<TMP_Text>().text = "Open Room";
-            playButton.GetComponent<Button>().interactable = true;
+            _closeRoomButton.GetComponentInChildren<TMP_Text>().text = "Open Room";
+            _playButton.GetComponent<Button>().interactable = true;
+        }
+    }
+
+    public void ShopButtonPressed()
+    {
+        if (!_isShopOpen)
+        {
+            _shopPanel.SetActive(true);
+            _isShopOpen = true;
+        }
+        
+        else if (_isShopOpen)
+        {
+            _shopPanel.SetActive(false);
+            _isShopOpen = false;
         }
     }
 
@@ -147,28 +171,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                     keyValue.Value.SetActive(false);
             }
         }
-    
-
-
-
-    /*Debug.Log("SearchRoomByName");
-    
-    foreach (RoomItem item in roomItemsList)
-    {
-        if (item.roomName.text != _roomSearchInput.text)
-        {
-            _warningsScripts.CantFindRoomWarning();
-            Debug.Log("CantFindRoomWarning");
-        }
-
-        else if (item.roomName.text == _roomSearchInput.text)
-        {
-            Debug.Log("Find!");
-            PhotonNetwork.JoinRoom(roomName);
-            break;
-        }
-    }*/
-        
     }
 
     public void JoinRoom(string roomName)
@@ -234,14 +236,14 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient /*&& PhotonNetwork.CurrentRoom.PlayerCount >= 2*/)
         {
-            playButton.SetActive(true);
-            closeRoomButton.SetActive(true);
+            _playButton.SetActive(true);
+            _closeRoomButton.SetActive(true);
         }
 
         else
         {
-            playButton.SetActive(false);
-            closeRoomButton.SetActive(false);
+            _playButton.SetActive(false);
+            _closeRoomButton.SetActive(false);
         }
     }
 
@@ -256,9 +258,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
             _privateRoomText.gameObject.SetActive(true);
-            copyRoomNameButton.gameObject.SetActive(true);
-            closeRoomButton.GetComponentInChildren<TMP_Text>().text = "Open Room";
-            playButton.GetComponent<Button>().interactable = true;
+            _copyRoomNameButton.gameObject.SetActive(true);
+            _closeRoomButton.GetComponentInChildren<TMP_Text>().text = "Open Room";
+            _playButton.GetComponent<Button>().interactable = true;
             Hashtable properties = new Hashtable();
             properties.Add("isOpen", false);
             PhotonNetwork.CurrentRoom.SetCustomProperties(properties);
@@ -267,9 +269,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.CurrentRoom.IsOpen = true;
             _privateRoomText.gameObject.SetActive(false);
-            copyRoomNameButton.gameObject.SetActive(false);
-            closeRoomButton.GetComponentInChildren<TMP_Text>().text = "Close Room";
-            playButton.GetComponent<Button>().interactable = false;
+            _copyRoomNameButton.gameObject.SetActive(false);
+            _closeRoomButton.GetComponentInChildren<TMP_Text>().text = "Close Room";
+            _playButton.GetComponent<Button>().interactable = false;
             Hashtable properties = new Hashtable();
             properties.Add("isOpen", true);
             PhotonNetwork.CurrentRoom.SetCustomProperties(properties);

@@ -45,6 +45,7 @@
     <Analyzer Include="F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Models\PROMETEO - Car Controller\Editor\PrometeoEditor.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Editor\DWGEditor.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\clientcommon.ja.txt" />
@@ -92,6 +93,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\guihelp.zh-Hant.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\workspaceserver.ko.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\images.en.txt" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Editor" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\clientcommon.zh-Hant.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\commontypes.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\images.zh-Hant.txt" />

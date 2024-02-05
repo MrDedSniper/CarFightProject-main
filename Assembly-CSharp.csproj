@@ -62,7 +62,9 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\UIScrap.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\ThrowObject.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\PrefabButtonController.cs" />
      <Compile Include="Assets\Scripts\GameSystems\GameManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\CarSound.cs" />
@@ -88,6 +90,7 @@
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGColliderEnabler.cs" />
      <Compile Include="Assets\Scripts\CarBehavior\CarController.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\CameraFreeRoam.cs" />
+     <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\HealthbarBevahior.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -95,6 +98,7 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ProductItemUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
@@ -110,6 +114,7 @@
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\ColumnBreakScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\LobbyManager.cs" />
+     <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\WeaponsScripst\BulletBehavior.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGBuilder.cs" />
@@ -118,19 +123,23 @@
      <Compile Include="Assets\Scripts\NetworkScripts\RoomItem.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\DoNotRotate.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\CreateAccountWindow.cs" />
      <Compile Include="Assets\Scripts\GameSystems\MusicPlayer.cs" />
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\ColumnVariableBreakScript.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ProductData.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\DamageOutputScript.cs" />
      <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ScrapCurrency.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\UIHealthbar.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\Scripts\EconomyScripts\ShopBehavior.cs" />
      <Folder Include="Assets" />
      <None Include="Library\PackageCache\com.unity.settings-manager@2.0.1\package.json" />
      <None Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0\package.json" />
@@ -147,6 +156,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Scripts\UIBehavior" />
      <Folder Include="Library\PackageCache\com.unity.modules.imgui@1.0.0" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Textures" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
      <None Include="Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0\package.json" />
      <None Include="Library\PackageCache\com.unity.modules.ai@1.0.0\package.json" />
@@ -160,6 +170,7 @@
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Skybox\Night\Textures" />
      <None Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\package.json" />
      <Folder Include="Library\PackageCache\com.unity.ide.rider@3.0.25\Rider" />
+     <Folder Include="Assets\Scripts\EconomyScripts" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Textures" />
      <None Include="Library\PackageCache\com.unity.modules.assetbundle@1.0.0\package.json" />
@@ -170,6 +181,7 @@
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Skybox" />
      <Folder Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing" />
      <None Include="Library\PackageCache\com.unity.modules.imgui@1.0.0\package.json" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects\Particle Systems\Prefabs" />
      <Folder Include="Assets\PlayfabAccountUI\Prefabs\UI" />
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.9.1\Graphics" />
      <None Include="Library\PackageCache\com.unity.modules.tilemap@1.0.0\package.json" />
@@ -181,14 +193,17 @@
      <Folder Include="Assets\Audio\Music" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <Folder Include="Assets\PlayfabAccountUI\Fonts" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Meshes" />
      <None Include="Library\PackageCache\com.unity.timeline@1.7.5\package.json" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Documentation" />
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.9.1" />
      <Folder Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Gizmos" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Textures\Color Variations" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.21\ValidationConfig.json" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Fonts" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Library\PackageCache\com.unity.modules.terrainphysics@1.0.0\package.json" />
@@ -203,6 +218,7 @@
      <None Include="Library\PackageCache\com.unity.visualscripting@1.9.1\package.json" />
      <Folder Include="Assets\Images" />
      <None Include="Library\PackageCache\com.unity.editorcoroutines@1.0.0\package.json" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Scripts" />
      <None Include="Library\PackageCache\com.unity.timeline@1.7.5\ValidationExceptions.json" />
      <Folder Include="Assets\Models\Destructible Column Asset\Prefabs\Dynamic" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\package.json" />
@@ -216,6 +232,7 @@
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.21\package.json" />
      <Folder Include="Assets\PlayfabAccountUI" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects\Trails\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Library\PackageCache\com.unity.modules.imageconversion@1.0.0" />
      <Folder Include="Assets\Models\Destructible Column Asset" />
@@ -257,11 +274,13 @@
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Prefabs (Meshes Only)" />
      <Folder Include="Assets\Models\LowPolyRoadPack\Demo\Materials" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects" />
      <Folder Include="Library\PackageCache\com.unity.modules.wind@1.0.0" />
      <Folder Include="Assets\Prefabs\UI" />
      <Folder Include="Assets\Photon\PhotonChat\Demos\DemoChat\Files" />
      <None Include="Assets\Audio\Car Engine Sound - i6 German Free\Assets\Audio\Read Me.txt" />
      <Folder Include="Assets\Models\LowPolyRoadPack" />
+     <Folder Include="Assets\ScriptableObjects" />
      <None Include="Library\PackageCache\com.unity.modules.physics2d@1.0.0\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\Models\Destructible Column Asset\Prefabs" />
@@ -278,11 +297,13 @@
      <Folder Include="Assets\Models\DestructibleWallGenerator" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Textures\Mobile Devices" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.21\ValidationExceptions.json" />
      <Folder Include="Assets\Photon\PhotonUnityNetworking\Resources" />
      <Folder Include="Assets\Photon\PhotonLibs\Metro" />
      <Folder Include="Assets\Photon" />
      <Folder Include="Assets\Audio\Car Engine Sound - i6 German Free\Documentation" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Prefabs" />
      <Folder Include="Assets\Models\LowPolyRoadPack\Textures" />
      <None Include="Library\PackageCache\com.unity.modules.wind@1.0.0\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
@@ -295,6 +316,7 @@
      <Folder Include="Library\PackageCache\com.unity.2d.sprite@1.0.0" />
      <Folder Include="Library\PackageCache\com.unity.modules.tilemap@1.0.0" />
      <Folder Include="Library\PackageCache\com.unity.editorcoroutines@1.0.0" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects\Trails" />
      <Folder Include="Library\PackageCache\com.unity.modules.ui@1.0.0" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts" />
@@ -323,6 +345,7 @@
      <Folder Include="Assets\TextMesh Pro\Fonts" />
      <None Include="Library\PackageCache\com.unity.modules.vehicles@1.0.0\package.json" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Materials\Color Variations" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller" />
      <Folder Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\EditorResources\Overlay" />
      <Folder Include="Assets\Models\Destructible Column Asset\Scripts" />
      <None Include="Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\package.json" />
@@ -332,6 +355,7 @@
      <None Include="Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0\package.json" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Meshes" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Materials" />
      <Folder Include="Assets\Models\DestructibleWallGenerator\DWG\Documentation" />
      <Folder Include="Assets\Audio\Car Engine Sound - i6 German Free\Assets\Audio\i6_german_free" />
      <None Include="Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0\package.json" />
@@ -351,7 +375,9 @@
      <Folder Include="Assets\Prefabs\Weapons" />
      <None Include="Library\PackageCache\com.unity.modules.xr@1.0.0\package.json" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Tests" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Scenes" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_Properties.cginc" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects\Particle Systems\Meshes" />
      <Folder Include="Assets\Models\LowPolyRoadPack\Demo\Textures" />
      <Folder Include="Assets\Images\UI" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Materials" />
@@ -394,10 +420,12 @@
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <Folder Include="Library\PackageCache\com.unity.modules.terrain@1.0.0" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Textures" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects\Particle Systems" />
      <Folder Include="Library\PackageCache\com.unity.2d.sprite@1.0.0\Tests" />
      <None Include="Library\PackageCache\com.unity.modules.animation@1.0.0\package.json" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
      <Folder Include="Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Sounds" />
      <Folder Include="Assets\Photon\PhotonLibs\netstandard2.0" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras" />
      <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
@@ -418,6 +446,7 @@
      <Folder Include="Library\PackageCache\com.unity.ugui@1.0.0" />
      <Folder Include="Library\PackageCache\com.unity.settings-manager@2.0.1\Tests" />
      <Folder Include="Assets\Scripts\WeaponsScripst" />
+     <None Include="Assets\Models\PROMETEO - Car Controller\Fonts\Licence.txt" />
      <Folder Include="Assets\Models\DestructibleWallGenerator\DWG" />
      <Folder Include="Assets\SystemFiles" />
      <None Include="Library\PackageCache\com.unity.modules.ui@1.0.0\package.json" />
@@ -425,6 +454,7 @@
      <Folder Include="Assets\Models\DinV\Dynamic Space Background" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <Folder Include="Assets\Scripts\NetworkScripts" />
+     <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects\Particle Systems\Materials" />
      <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\package.json" />
      <Folder Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts" />
      <Reference Include="UnityEngine">

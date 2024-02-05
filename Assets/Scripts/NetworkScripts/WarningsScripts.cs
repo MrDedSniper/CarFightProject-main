@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +6,7 @@ using UnityEngine.UI;
 public class WarningsScripts : MonoBehaviour
 {
     [SerializeField] private GameObject _cantFindRoom;
+    [SerializeField] private GameObject _notEnoughScrap;
     [SerializeField] private float _fadeDuration = 2f;
     private float _startAlpha = 100f;
     
@@ -15,29 +14,39 @@ public class WarningsScripts : MonoBehaviour
     
     internal void CantFindRoomWarning()
     {
+        ShowWarning(_cantFindRoom);
+    }
+    
+    internal void NotEnoughScrapWarning()
+    {
+        ShowWarning(_notEnoughScrap);
+    }
+
+    private void ShowWarning(GameObject warningObject)
+    {
         if (_fadeCoroutine != null)
         {
             StopCoroutine(_fadeCoroutine);
         }
 
-        Image panelImage = _cantFindRoom.GetComponentInChildren<Image>();
+        Image panelImage = warningObject.GetComponentInChildren<Image>();
         Color startColor = panelImage.color;
         startColor.a = _startAlpha / 255f;
         panelImage.color = startColor;
         
-        TMP_Text text = _cantFindRoom.GetComponentInChildren<TMP_Text>();
+        TMP_Text text = warningObject.GetComponentInChildren<TMP_Text>();
         Color textColor = text.color;
         textColor.a = _startAlpha / 255f;
         text.color = textColor;
 
-        _cantFindRoom.SetActive(true);
-        _fadeCoroutine = StartCoroutine(FadeOut());
+        warningObject.SetActive(true);
+        _fadeCoroutine = StartCoroutine(FadeOut(warningObject));
     }
     
-    private IEnumerator FadeOut()
+    private IEnumerator FadeOut(GameObject warningObject)
     {
-        Image panelImage = _cantFindRoom.GetComponentInChildren<Image>();
-        TMP_Text text = _cantFindRoom.GetComponentInChildren<TMP_Text>();
+        Image panelImage = warningObject.GetComponentInChildren<Image>();
+        TMP_Text text = warningObject.GetComponentInChildren<TMP_Text>();
         
         float startAlpha = _startAlpha / 255f;
         float endAlpha = 0f;
@@ -59,6 +68,6 @@ public class WarningsScripts : MonoBehaviour
             yield return null;
         }
 
-        _cantFindRoom.SetActive(false);
+        warningObject.SetActive(false);
     }
 }

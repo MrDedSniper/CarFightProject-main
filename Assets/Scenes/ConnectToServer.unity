@@ -150,10 +150,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1208187741}
-    - target: {fileID: 3502708255590582217, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnTryToLogin
-      objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -164,27 +160,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0.57900006
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0.586
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0.423
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0.41300002
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: -0.533905
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 1.988205
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_LocalPosition.x
@@ -216,11 +212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7984028493052115345, guid: 3177ef3744fd5ef4f9f7605434e18968, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -355,10 +351,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1208187741}
-    - target: {fileID: 832096090718067838, guid: 3107e61efc0f20a4a89fbf108db99c1e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnSignInCanvasButtonClicked
-      objectReference: {fileID: 0}
     - target: {fileID: 1780311105119999287, guid: 3107e61efc0f20a4a89fbf108db99c1e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -385,11 +377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1780311105119999287, guid: 3107e61efc0f20a4a89fbf108db99c1e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 181.9764
       objectReference: {fileID: 0}
     - target: {fileID: 1780311105119999287, guid: 3107e61efc0f20a4a89fbf108db99c1e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 91.5495
       objectReference: {fileID: 0}
     - target: {fileID: 1780311105119999287, guid: 3107e61efc0f20a4a89fbf108db99c1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -443,10 +435,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1208187741}
-    - target: {fileID: 6144050284518863900, guid: 3107e61efc0f20a4a89fbf108db99c1e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnRegisterCanvasButtonClicked
-      objectReference: {fileID: 0}
     - target: {fileID: 9105329349918157792, guid: 3107e61efc0f20a4a89fbf108db99c1e, type: 3}
       propertyPath: m_Name
       value: SignInAndRegisterButtons
@@ -537,10 +525,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -587,10 +575,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1208187741}
-    - target: {fileID: 5063303017873690178, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnTryToLogin
-      objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -601,27 +585,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0.57900006
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0.586
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0.42039582
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0.41300002
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: -0.71121216
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: -0.030303955
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_LocalPosition.x
@@ -653,11 +637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7626749882974329800, guid: f1543e17587a5c648a06e3dd0c969f98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

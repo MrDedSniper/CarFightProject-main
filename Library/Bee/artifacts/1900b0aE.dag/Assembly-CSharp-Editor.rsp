@@ -403,6 +403,7 @@
 -analyzer:"F:/Program Files/UnityHub/2022.3.11f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"F:/Program Files/UnityHub/2022.3.11f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Models/DestructibleWallGenerator/DWG/Editor/DWGEditor.cs"
+"Assets/Models/PROMETEO - Car Controller/Editor/PrometeoEditor.cs"
 "Assets/Photon/PhotonChat/Demos/DemoChat/Editor/ChatEditor.cs"
 -langversion:9.0
 
