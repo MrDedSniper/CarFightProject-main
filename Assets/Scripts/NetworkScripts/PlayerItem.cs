@@ -22,7 +22,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
    private LobbyManager _lobbyManager;
 
-   private Hashtable playerProperties = new Hashtable();
+   internal Hashtable playerProperties = new Hashtable();
    public Image playerCar;
    public List<Sprite> avatars = new List<Sprite>();
 

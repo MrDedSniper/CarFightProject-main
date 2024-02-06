@@ -410,7 +410,6 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/AudioScripts/CarSound.cs"
 "Assets/Scripts/CarBehavior/CarController.cs"
-"Assets/Scripts/CarBehavior/GetHealthFromCloud.cs"
 "Assets/Scripts/CarBehavior/PlayerHealth.cs"
 "Assets/Scripts/EconomyScripts/ProductData.cs"
 "Assets/Scripts/EconomyScripts/ProductItemUI.cs"

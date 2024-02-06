@@ -9,8 +9,10 @@ using Photon.Pun;
 
 internal class PlayerHealth : MonoBehaviour
 {
+    private PlayerItem _playerItem;
+    
     internal float _currentHealth;
-    internal float _maxHealth = 100f;
+    internal float _maxHealth;
 
     [SerializeField] private HealthbarBevahior _healthbarBevahior;
     private PhotonView photonView;
@@ -18,8 +20,24 @@ internal class PlayerHealth : MonoBehaviour
     void Start()
     {
         photonView = GetComponent<PhotonView>();
-        
+        _playerItem = FindObjectOfType<PlayerItem>();
+        GetMaxHealth();
+    }
+
+    private void GetMaxHealth()
+    {
+        int carIndex = (int) PhotonNetwork.LocalPlayer.CustomProperties["playerCar"];
+        if (carIndex < 5)
+        {
+            _maxHealth = 100f;
+        }
+        else if (carIndex == 5)
+        {
+            _maxHealth = 200f;
+        }
+        Debug.Log(_maxHealth);
         _currentHealth = _maxHealth;
+        
         
         PlayFabClientAPI.UpdateUserData(new UpdateUserDataRequest()
         {
@@ -28,7 +46,6 @@ internal class PlayerHealth : MonoBehaviour
                 { "HP", _currentHealth.ToString() },
             },
         }, result => Debug.Log("HP updated successfully"), error => Debug.LogError(error.GenerateErrorReport()));
-
     }
 
     void OnCollisionEnter(Collision collision)
