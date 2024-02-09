@@ -66,9 +66,11 @@
      <Compile Include="Assets\Scripts\UIBehavior\PrefabButtonController.cs" />
      <Compile Include="Assets\Scripts\GameSystems\GameManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\TypingSound.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\CarSound.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGPhysicsCheck.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\ParallaxBackground.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\AccountDataWindowBase.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
@@ -113,6 +115,7 @@
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\ColumnBreakScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\LobbyManager.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\UISound.cs" />
      <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\WeaponsScripst\BulletBehavior.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -123,6 +126,7 @@
      <Compile Include="Assets\Scripts\UIBehavior\DoNotRotate.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
+     <Compile Include="Assets\Scripts\GameSystems\DontDestroy.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\CreateAccountWindow.cs" />
      <Compile Include="Assets\Scripts\GameSystems\MusicPlayer.cs" />

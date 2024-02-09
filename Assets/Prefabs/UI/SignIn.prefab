@@ -379,7 +379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23670846, y: 0.23270611}
   m_AnchorMax: {x: 0.7632916, y: 0.3932348}
-  m_AnchoredPosition: {x: 0, y: 0.40000153}
+  m_AnchoredPosition: {x: 0, y: 0.3999939}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &658960036362491857
@@ -471,6 +471,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: b5b17fb8205cbc8459883a99feba9c9d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -777,6 +789,7 @@ GameObject:
   - component: {fileID: 796934817550626234}
   - component: {fileID: 1695168656178599136}
   - component: {fileID: 2316919033314026262}
+  - component: {fileID: 6378007805608957089}
   m_Layer: 5
   m_Name: PasswordInputField
   m_TagString: Untagged
@@ -940,6 +953,21 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!114 &6378007805608957089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706131232108219553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe82948f9675d946801629cda828176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputField: {fileID: 2316919033314026262}
+  _audioSource: {fileID: 0}
+  _typingSound: {fileID: 8300000, guid: 5fd94cc1a409f664e8a630803ad538f6, type: 3}
 --- !u!1 &7901048525564809011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1166,7 @@ GameObject:
   - component: {fileID: 431232223975641281}
   - component: {fileID: 5921430466508987879}
   - component: {fileID: 4301863634098521729}
+  - component: {fileID: 8870991098821598670}
   m_Layer: 5
   m_Name: NicknameInputField
   m_TagString: Untagged
@@ -1301,6 +1330,21 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!114 &8870991098821598670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8402808848585257696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe82948f9675d946801629cda828176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputField: {fileID: 4301863634098521729}
+  _audioSource: {fileID: 0}
+  _typingSound: {fileID: 8300000, guid: 5fd94cc1a409f664e8a630803ad538f6, type: 3}
 --- !u!1 &8517171685161802103
 GameObject:
   m_ObjectHideFlags: 0

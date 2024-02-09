@@ -74,22 +74,6 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
             OnSuccessEvent.Invoke();
             //SetUserData(result.PlayFabId);
         }
-        
-        /*private void SetUserData(string PlayFabId)
-        {
-            PlayFabClientAPI.UpdateUserData(new UpdateUserDataRequest
-                {
-                    Data = new Dictionary<string, string>
-                    {
-                        {"time_recieve_daily_reward", DateTime.UtcNow.ToString()}
-                    }
-                },
-                result =>
-                {
-                    Debug.Log("SetUserData");
-                    GetUserData(PlayFabId, "time_recieve_daily_reward");
-                }, OnLoginError);
-        }*/
 
         private void GetUserData(string playFabId, string keyData)
         {
