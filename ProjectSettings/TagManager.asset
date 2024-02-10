@@ -9,6 +9,8 @@ TagManager:
   - Damageable
   - Projectile
   - DontDestroyObject
+  - UISingleButton
+  - UIInputField
   layers:
   - Default
   - TransparentFX

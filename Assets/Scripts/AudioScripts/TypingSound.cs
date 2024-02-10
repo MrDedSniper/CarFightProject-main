@@ -3,7 +3,7 @@ using TMPro;
 
 public class TypingSound : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField _inputField;
+    public TMP_InputField _inputField;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _typingSound;
 

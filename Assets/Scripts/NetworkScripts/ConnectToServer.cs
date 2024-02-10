@@ -14,9 +14,11 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     [SerializeField] private Button _singInCanvasButton;
     [SerializeField] private Button _registerCanvasButton;
+    [SerializeField] private Button _backButton;
     
     [SerializeField] private GameObject _signInCanvas;
     [SerializeField] private GameObject _registerCanvas;
+    [SerializeField] private GameObject _signAndRegisterCanvas;
     
     [SerializeField] private TMP_InputField _usernameInput;
     [SerializeField] private TMP_InputField _passwordInput;
@@ -112,7 +114,15 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 
         private void HideSignInAndRegisterButtons()
         {
-            _singInCanvasButton.gameObject.SetActive(false);
-            _registerCanvasButton.gameObject.SetActive(false);
+            _signAndRegisterCanvas.gameObject.SetActive(false);
+            _backButton.gameObject.SetActive(true);
+        }
+
+        public void OnClickedBack()
+        {
+            _signInCanvas.gameObject.SetActive(false);
+            _registerCanvas.gameObject.SetActive(false);
+            _backButton.gameObject.SetActive(false);
+            _signAndRegisterCanvas.gameObject.SetActive(true);
         }
 }

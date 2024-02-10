@@ -289,7 +289,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (!PhotonNetwork.CurrentRoom.IsOpen)
         {
-            GameObject dontDestroyObject = GameObject.FindWithTag("DontDestroyObject");
+            GameObject dontDestroyObject = GameObject.FindWithTag("DontDestroyBG");
             if (dontDestroyObject != null)
             {
                 Destroy(dontDestroyObject);
