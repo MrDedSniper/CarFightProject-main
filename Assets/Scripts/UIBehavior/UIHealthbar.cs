@@ -11,8 +11,8 @@ public class UIHealthbar : MonoBehaviour
         _playerHealth = FindObjectOfType<PlayerHealth>();
     }
 
-    private void Update()
+    internal void UpdateHealth()
     {
-        _healthText.text = _playerHealth._currentHealth.ToString();
+        _healthText.text = Mathf.Round(_playerHealth._currentHealth).ToString();
     }
 }

@@ -4,7 +4,7 @@ using System.Collections;
 using UnityEngine.Experimental.GlobalIllumination;
 using Photon.Pun;
 
-public class CarControls : MonoBehaviour
+public class CarController : MonoBehaviour
 {
     [SerializeField] private PhotonView _photonView;
     

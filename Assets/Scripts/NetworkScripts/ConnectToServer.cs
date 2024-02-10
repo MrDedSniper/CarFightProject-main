@@ -23,6 +23,8 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     [SerializeField] private TMP_InputField _usernameInput;
     [SerializeField] private TMP_InputField _passwordInput;
     [SerializeField] private TMP_Text _buttonText;
+    
+    private bool _isConnectedToMaster = false;
 
     private const string AuthGuidKey = "auth_guid_key";
         
@@ -98,6 +100,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
         public override void OnConnectedToMaster()
         {
             Debug.Log("OnConnectedToMaster");
+            _isConnectedToMaster = true;
         }
 
         public void OnSignInCanvasButtonClicked()

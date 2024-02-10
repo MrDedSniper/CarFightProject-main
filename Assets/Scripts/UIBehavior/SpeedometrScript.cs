@@ -9,7 +9,7 @@ public class SpeedometrScript : MonoBehaviour
 {
    [SerializeField] private TMP_Text _speedText;
    
-   public CarControls _carControls;
+   public CarController _carControls;
    public PhotonView _photonView;
 
    private void Start()
@@ -20,7 +20,7 @@ public class SpeedometrScript : MonoBehaviour
       
       if (playerCarObject != null)
       {
-         _carControls = playerCarObject.GetComponent<CarControls>();
+         _carControls = playerCarObject.GetComponent<CarController>();
       }
       else
       {

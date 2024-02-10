@@ -2171,6 +2171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedText: {fileID: 268741894}
+  _carControls: {fileID: 0}
+  _photonView: {fileID: 0}
 --- !u!114 &126436447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27579,6 +27581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537603680}
   - component: {fileID: 1537603679}
+  - component: {fileID: 1537603681}
   m_Layer: 0
   m_Name: GameSystems
   m_TagString: Untagged
@@ -27624,6 +27627,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1537603681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537603678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe1748ff5be1464b9e2d031f1a20ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerSpawner: {fileID: 1537603679}
 --- !u!1001 &1542208853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37323,15 +37339,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3311311803080157842, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5736772367466477252, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5736772367466477252, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

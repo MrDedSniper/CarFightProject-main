@@ -9,22 +9,31 @@ using Photon.Pun;
 
 internal class PlayerHealth : MonoBehaviour
 {
-    private PlayerItem _playerItem;
+    private HealthbarOnScene _healthbarOnScene;
+    private CarController _carController;
+    private DeathSystem _deathSystem;
+    private UIHealthbar _uiHealthbar;
     
+    private PlayerItem _playerItem;
     internal float _currentHealth;
     internal float _maxHealth;
 
-    [SerializeField] private HealthbarBevahior _healthbarBevahior;
+    
     private PhotonView photonView;
 
-    void Start()
+    private void Start()
     {
+        _deathSystem = FindObjectOfType<DeathSystem>();
+        _carController = FindObjectOfType<CarController>();
+        _uiHealthbar = FindObjectOfType<UIHealthbar>();
+        _healthbarOnScene = FindObjectOfType<HealthbarOnScene>();
+        
         photonView = GetComponent<PhotonView>();
         _playerItem = FindObjectOfType<PlayerItem>();
         GetMaxHealth();
     }
 
-    private void GetMaxHealth()
+    internal void GetMaxHealth()
     {
         int carIndex = (int) PhotonNetwork.LocalPlayer.CustomProperties["playerCar"];
         if (carIndex < 5)
@@ -48,51 +57,54 @@ internal class PlayerHealth : MonoBehaviour
         }, result => Debug.Log("HP updated successfully"), error => Debug.LogError(error.GenerateErrorReport()));
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("DamagingEnvironment"))
         {
-            TakeDamage(5f);
+            float speed = _carController._currentSpeed;
+            float damage = CalculateDamage(speed);
+            TakeDamage(damage);
         }
+    }
+    
+    private float CalculateDamage(float speed)
+    {
+        float damagePer100KmH = 40f;
+        float damage = (speed / 100f) * damagePer100KmH;
+        return damage;
     }
 
     internal void TakeDamage(float damage)
     {
         _currentHealth -= damage;
-        _healthbarBevahior.UpdateHealtbar(_currentHealth, _maxHealth);
+        _healthbarOnScene.UpdateHealtbar(_currentHealth, _maxHealth);
 
-        if (_currentHealth <= 0)
-        {
-            //Die();
-        }
-        
         PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable()
             {
                 {"HP", _currentHealth.ToString()}
                 
             });
         
-        
-        /*PlayFabClientAPI.UpdateUserData(new UpdateUserDataRequest()
-        {
-            Data = new Dictionary<string, string>()
-            {
-                { "HP", _currentHealth.ToString() },
-            },
-        }, result => Debug.Log("HP updated successfully"), error => Debug.LogError(error.GenerateErrorReport()));*/
-        
         photonView.RPC("UpdateHealth", RpcTarget.Others, _currentHealth);
+        
+        if (_currentHealth <= 0)
+        {
+            Die();
+        }
+
+        _uiHealthbar.UpdateHealth();
 
     }
     
     [PunRPC] internal void UpdateHealth(float health)
     {
         _currentHealth = health;
-        _healthbarBevahior.UpdateHealtbar(_currentHealth, _maxHealth);
+        _healthbarOnScene.UpdateHealtbar(_currentHealth, _maxHealth);
     }
 
     private void Die()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Die");
+        _deathSystem.StartDeathAnimation();
     }
 }

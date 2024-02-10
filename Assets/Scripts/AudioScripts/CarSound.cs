@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CarSound : MonoBehaviour
 {
-    [SerializeField] private CarControls _carControls;
+    [SerializeField] private CarController _carControls;
     
     [SerializeField] private AudioSource _audioSourceOneShot;
     [SerializeField] private AudioSource _audioSourceLoop;

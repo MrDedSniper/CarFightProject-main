@@ -94,7 +94,6 @@
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\CameraFreeRoam.cs" />
      <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-     <Compile Include="Assets\Scripts\UIBehavior\HealthbarBevahior.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Scripts\EnemiesAIBehavoir\SearchingTarget.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
@@ -111,6 +110,7 @@
      <Compile Include="Assets\Scripts\NetworkScripts\SignInWindow.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\HealthbarOnScene.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\PlayerItem.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\UISoundsManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
@@ -145,6 +145,7 @@
      <Compile Include="Assets\Scripts\UIBehavior\UIElementHandler.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\Scripts\CarBehavior\DeathSystem.cs" />
      <Compile Include="Assets\Scripts\EconomyScripts\ShopBehavior.cs" />
      <Reference Include="UnityEngine">
      <HintPath>F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>

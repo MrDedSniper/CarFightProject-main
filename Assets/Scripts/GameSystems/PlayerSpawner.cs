@@ -10,6 +10,11 @@ public class PlayerSpawner : MonoBehaviour
 
     private void Awake()
     {
+        SpawnCurrentPlayer();
+    }
+
+    public void SpawnCurrentPlayer()
+    {
         int randomNumber = Random.Range(0, _spawnPoints.Length);
         Transform spawnPoint = _spawnPoints[randomNumber];
 
@@ -36,5 +41,27 @@ public class PlayerSpawner : MonoBehaviour
     public void SetCurrentPrefab(GameObject prefab)
     {
         _currentPrefab = prefab;
+    }
+    
+    public Rigidbody GetCurrentPlayerRigidbody()
+    {
+        if (_currentPrefab != null)
+        {
+            Rigidbody playerRigidbody = _currentPrefab.GetComponent<Rigidbody>();
+            if (playerRigidbody != null)
+            {
+                return playerRigidbody;
+            }
+            else
+            {
+                Debug.LogError("Rigidbody component not found on current player prefab");
+                return null;
+            }
+        }
+        else
+        {
+            Debug.LogError("Current player prefab is null");
+            return null;
+        }
     }
 }
