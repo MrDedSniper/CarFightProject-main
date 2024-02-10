@@ -305,6 +305,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                 Destroy(dontDestroyObject);
             }
             
+            _mainMenusSounds.StartGameplayMusic();
+            
             PhotonNetwork.LoadLevel("FirstArena");
         }
     }

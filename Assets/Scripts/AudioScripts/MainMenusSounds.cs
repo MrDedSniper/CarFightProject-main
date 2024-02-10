@@ -13,6 +13,11 @@ public class MainMenusSounds : MonoBehaviour
     
     [SerializeField] private Slider _soundsSlider;
     [SerializeField] private GameObject _soundsSource;
+    
+    [Header("Music List")] 
+    
+    [SerializeField] private AudioClip _mainMenuMusicClip;
+    [SerializeField] private AudioClip _gameplayMusicClip;
 
     private bool isOptionsOpen = false;
 
@@ -20,8 +25,18 @@ public class MainMenusSounds : MonoBehaviour
     {
         _musicSlider.onValueChanged.AddListener(delegate { AdjustMusicVolume(); });
         _soundsSlider.onValueChanged.AddListener(delegate { AdjustSoundsVolume(); });
-
+        
         SignForSoundsSource();
+        
+        if (_mainMenuMusicClip != null)
+        {
+            _musicSource.GetComponent<AudioSource>().clip = _mainMenuMusicClip;
+            _musicSource.GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            Debug.LogError("Gameplay music clip is not assigned!");
+        }
     }
 
     public void SignForSoundsSource()
@@ -60,6 +75,19 @@ public class MainMenusSounds : MonoBehaviour
         foreach (AudioSource audioSource in audioSources)
         {
             audioSource.volume = _soundsSlider.value;
+        }
+    }
+
+    public void StartGameplayMusic()
+    {
+        if (_gameplayMusicClip != null)
+        {
+            _musicSource.GetComponent<AudioSource>().clip = _gameplayMusicClip;
+            _musicSource.GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            Debug.LogError("Gameplay music clip is not assigned!");
         }
     }
 }
