@@ -48,6 +48,7 @@
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGDestroyer.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGTagManager.cs" />
+     <Compile Include="Assets\Scripts\EnemiesAIBehavoir\EnemyRobotAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Scripts\GameSystems\CameraScripts\DeactivateCameraIfNotMine.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -111,6 +112,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\HealthbarOnScene.cs" />
+     <Compile Include="Assets\Scripts\EnemiesAIBehavoir\EnemiesSpawner.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\PlayerItem.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\UISoundsManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />

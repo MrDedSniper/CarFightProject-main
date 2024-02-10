@@ -5,13 +5,15 @@ using UnityEngine.AI;
 
 public class SearchingTarget : MonoBehaviour
 {
-    public float searchRadius = 10f; // радиус поиска ближайшего игрока
+    public float searchRadius = 10f; // Радиус поиска ближайшего игрока
     private NavMeshAgent navAgent;
     public GameObject target;
+    private Animator anim;
 
     private void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -35,11 +37,21 @@ public class SearchingTarget : MonoBehaviour
 
         if (target != null)
         {
-            // повернуться к цели
+            // Повернуться к цели
             transform.LookAt(target.transform);
 
-            // отправиться к цели
+            // Отправиться к цели
             navAgent.SetDestination(target.transform.position);
+
+            // Проверить, движется ли враг к цели
+            if (navAgent.velocity.magnitude > 0.1f)
+            {
+                anim.SetBool("Moving", true); // Запустить анимацию движения
+            }
+            else
+            {
+                anim.SetBool("Moving", false); // Остановить анимацию движения
+            }
         }
     }
 }

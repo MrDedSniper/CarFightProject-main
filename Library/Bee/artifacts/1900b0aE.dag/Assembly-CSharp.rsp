@@ -420,6 +420,8 @@
 "Assets/Scripts/EconomyScripts/ProductItemUI.cs"
 "Assets/Scripts/EconomyScripts/ScrapCurrency.cs"
 "Assets/Scripts/EconomyScripts/ShopBehavior.cs"
+"Assets/Scripts/EnemiesAIBehavoir/EnemiesSpawner.cs"
+"Assets/Scripts/EnemiesAIBehavoir/EnemyRobotAnimator.cs"
 "Assets/Scripts/EnemiesAIBehavoir/SearchingTarget.cs"
 "Assets/Scripts/GameSystems/CameraScripts/CameraController.cs"
 "Assets/Scripts/GameSystems/CameraScripts/CameraFollowScript.cs"
