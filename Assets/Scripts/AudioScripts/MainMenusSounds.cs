@@ -20,6 +20,17 @@ public class MainMenusSounds : MonoBehaviour
     {
         _musicSlider.onValueChanged.AddListener(delegate { AdjustMusicVolume(); });
         _soundsSlider.onValueChanged.AddListener(delegate { AdjustSoundsVolume(); });
+
+        SignForSoundsSource();
+    }
+
+    public void SignForSoundsSource()
+    {
+        _soundsSource = GameObject.FindWithTag("SoundsSource");
+        if (_soundsSource == null)
+        {
+            Debug.LogError("Object with tag 'SoundSource' not found!");
+        }
     }
     
     public void OptionCanvasOnAndOff()
@@ -51,5 +62,4 @@ public class MainMenusSounds : MonoBehaviour
             audioSource.volume = _soundsSlider.value;
         }
     }
-
 }

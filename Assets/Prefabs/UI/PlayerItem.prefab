@@ -56,7 +56,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerName: {fileID: 2051724384637495220}
   backgroundImage: {fileID: 3821964208793609305}
-  highlightColor: {r: 0.6963933, g: 0.9622642, b: 0.63999647, a: 0.83137256}
+  highlightColor: {r: 0.2, g: 0.20784314, b: 0.25490198, a: 0.83137256}
   _leftArrowButton: {fileID: 8534938941575287562}
   _rightArrowButton: {fileID: 4340810281495422409}
   playerCar: {fileID: 5977634794794295906}

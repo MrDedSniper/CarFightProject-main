@@ -11,6 +11,9 @@ TagManager:
   - DontDestroyObject
   - UISingleButton
   - UIInputField
+  - DontDestroyBG
+  - DontDestroyMusic
+  - SoundsSource
   layers:
   - Default
   - TransparentFX

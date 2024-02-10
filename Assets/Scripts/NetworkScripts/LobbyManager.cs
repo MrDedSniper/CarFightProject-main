@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private WarningsScripts _warningsScripts;
+    private MainMenusSounds _mainMenusSounds;
     
     [SerializeField] private TMP_InputField _roomCreationInput;
     [SerializeField] private TMP_InputField _roomSearchInput;
@@ -49,6 +50,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     private void Start()
     {
         PhotonNetwork.JoinLobby();
+
+        _mainMenusSounds = FindObjectOfType<MainMenusSounds>();
+        _mainMenusSounds.SignForSoundsSource();
     }
 
     //Создание комнаты
@@ -289,7 +293,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (!PhotonNetwork.CurrentRoom.IsOpen)
         {
-            GameObject dontDestroyObject = GameObject.FindWithTag("DontDestroyBG");
+            GameObject dontDestroyBg = GameObject.FindWithTag("DontDestroyBG");
+            if (dontDestroyBg != null)
+            {
+                Destroy(dontDestroyBg);
+            }
+            
+            GameObject dontDestroyObject = GameObject.FindWithTag("DontDestroyObject");
             if (dontDestroyObject != null)
             {
                 Destroy(dontDestroyObject);
