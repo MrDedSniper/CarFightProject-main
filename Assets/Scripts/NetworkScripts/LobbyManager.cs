@@ -150,19 +150,26 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (string.IsNullOrEmpty(roomName))
         {
-            if (roomName.Equals(buff)) return;
+            if (roomName.Equals(buff))
+            {
+                return;
+            }
+            
             else
             {
                 buff = roomName;
+                
                 foreach (GameObject entry in roomListEntries.Values)
                 {
                     entry.SetActive(true);
                 }
             }
         }
+        
         else
         {
             buff = roomName;
+            
             foreach (KeyValuePair<string, GameObject> keyValue in roomListEntries)
             {
                 if (keyValue.Key.IndexOf(roomName) != -1)
@@ -282,6 +289,12 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (!PhotonNetwork.CurrentRoom.IsOpen)
         {
+            GameObject dontDestroyObject = GameObject.FindWithTag("DontDestroyObject");
+            if (dontDestroyObject != null)
+            {
+                Destroy(dontDestroyObject);
+            }
+            
             PhotonNetwork.LoadLevel("FirstArena");
         }
     }

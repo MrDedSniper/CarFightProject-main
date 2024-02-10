@@ -437,6 +437,7 @@
 "Assets/Scripts/NetworkScripts/WarningsScripts.cs"
 "Assets/Scripts/UIBehavior/DoNotRotate.cs"
 "Assets/Scripts/UIBehavior/HealthbarBevahior.cs"
+"Assets/Scripts/UIBehavior/MainMenusScript.cs"
 "Assets/Scripts/UIBehavior/ParallaxBackground.cs"
 "Assets/Scripts/UIBehavior/PrefabButtonController.cs"
 "Assets/Scripts/UIBehavior/SpeedometrScript.cs"

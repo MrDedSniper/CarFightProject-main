@@ -349,6 +349,8 @@
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/AudioScripts/CarSound.cs"
+"Assets/Scripts/AudioScripts/TypingSound.cs"
+"Assets/Scripts/AudioScripts/UISound.cs"
 "Assets/Scripts/CarBehavior/CarController.cs"
 "Assets/Scripts/CarBehavior/PlayerHealth.cs"
 "Assets/Scripts/EconomyScripts/ProductData.cs"

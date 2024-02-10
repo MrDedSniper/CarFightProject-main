@@ -17,7 +17,6 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     
     [SerializeField] private GameObject _signInCanvas;
     [SerializeField] private GameObject _registerCanvas;
-    [SerializeField] private GameObject _optionsCanvas;
     
     [SerializeField] private TMP_InputField _usernameInput;
     [SerializeField] private TMP_InputField _passwordInput;
@@ -115,11 +114,5 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
         {
             _singInCanvasButton.gameObject.SetActive(false);
             _registerCanvasButton.gameObject.SetActive(false);
-        }
-        
-        public void OnOptionsButtonClick()
-        {
-            _optionsCanvas.SetActive(true);
-
         }
 }

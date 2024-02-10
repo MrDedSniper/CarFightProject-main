@@ -40,5 +40,4 @@ public class AccountDataWindowBase : MonoBehaviour
             SceneManager.LoadScene("Lobby");
         }
     }
-    
 }

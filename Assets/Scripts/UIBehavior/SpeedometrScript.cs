@@ -1,16 +1,43 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 
 public class SpeedometrScript : MonoBehaviour
 {
-   [SerializeField] private CarControls _carControls;
    [SerializeField] private TMP_Text _speedText;
+   
+   public CarControls _carControls;
+   public PhotonView _photonView;
+
+   private void Start()
+   {
+      _photonView = GetComponent<PhotonView>();
+      
+      GameObject playerCarObject = GameObject.FindGameObjectWithTag("PlayerCar");
+      
+      if (playerCarObject != null)
+      {
+         _carControls = playerCarObject.GetComponent<CarControls>();
+      }
+      else
+      {
+         Debug.LogError("Object with tag 'PlayerCar' not found");
+      }
+
+      if (!_photonView.IsMine)
+      {
+         enabled = false;
+      }
+   }
 
    private void Update()
    {
-      _speedText.text = _carControls._currentSpeed.ToString("F0");
+      if (_photonView.IsMine && _carControls != null)
+      {
+         _speedText.text = _carControls._currentSpeed.ToString("F0");
+      }
    }
 }

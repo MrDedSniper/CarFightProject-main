@@ -1839,13 +1839,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prometheus
       objectReference: {fileID: 0}
-    - target: {fileID: 2090752575692956677, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2090752575692956677, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090752575692956677, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4693272330148048369, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: sceneViewId
@@ -2124,6 +2128,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 126436445}
+  - component: {fileID: 126436446}
+  - component: {fileID: 126436447}
   m_Layer: 5
   m_Name: Speedometer
   m_TagString: Untagged
@@ -2152,6 +2158,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0.12420654, y: -0.34851074}
   m_SizeDelta: {x: -0.24841309, y: -0.6970825}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &126436446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126436444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1e69c77bc9fd34dbf17262784520f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speedText: {fileID: 268741894}
+--- !u!114 &126436447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126436444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 125
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &145177358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4831,7 +4872,6 @@ GameObject:
   - component: {fileID: 268741892}
   - component: {fileID: 268741895}
   - component: {fileID: 268741894}
-  - component: {fileID: 268741893}
   m_Layer: 5
   m_Name: SpeedText
   m_TagString: Untagged
@@ -4858,20 +4898,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.6480026}
   m_SizeDelta: {x: -1, y: 0.02960205}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &268741893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268741891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1e69c77bc9fd34dbf17262784520f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _carControls: {fileID: 926807321}
-  _speedText: {fileID: 268741894}
 --- !u!114 &268741894
 MonoBehaviour:
   m_ObjectHideFlags: 0

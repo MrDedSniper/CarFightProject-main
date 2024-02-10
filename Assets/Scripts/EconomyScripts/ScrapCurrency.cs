@@ -33,8 +33,9 @@ public class ScrapCurrency : MonoBehaviour
         }
         else
         {
-            GetCurrency();
+            SaveCurrency();
             _scrapUI.UpdateScrapValue();
+            Invoke("GetCurrency", 5f);
         }
     }
 

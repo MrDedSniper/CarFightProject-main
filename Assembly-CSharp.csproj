@@ -74,6 +74,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\AccountDataWindowBase.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\MainMenusScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\Scripts\GameSystems\RotateSkybox.cs" />
@@ -197,6 +198,8 @@
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <Folder Include="Assets\PlayfabAccountUI\Fonts" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Meshes" />
+     <Folder Include="Assets\Models\Monster_Orc (Troll)\Material" />
+     <Folder Include="Assets\Models\Monster_Orc (Troll)\Texture" />
      <None Include="Library\PackageCache\com.unity.timeline@1.7.5\package.json" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
@@ -209,6 +212,7 @@
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Fonts" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\Models\Monster_Orc (Troll)" />
      <None Include="Library\PackageCache\com.unity.modules.terrainphysics@1.0.0\package.json" />
      <Folder Include="Assets\Models\LowPolyRoadPack\Models" />
      <Folder Include="Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2" />
@@ -251,6 +255,7 @@
      <Folder Include="Assets\Scripts\AudioScripts" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Scenes" />
      <Folder Include="Assets\TextMesh Pro" />
+     <Folder Include="Assets\Models\Monster_Orc (Troll)\Scenes" />
      <None Include="Library\PackageCache\com.unity.modules.unityanalytics@1.0.0\package.json" />
      <Folder Include="Assets\Prefabs" />
      <Folder Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0" />
@@ -347,6 +352,7 @@
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
      <None Include="Library\PackageCache\com.unity.modules.vehicles@1.0.0\package.json" />
+     <Folder Include="Assets\Models\Monster_Orc (Troll)\Animator_controller" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Materials\Color Variations" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller" />
      <Folder Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\EditorResources\Overlay" />
@@ -432,6 +438,7 @@
      <Folder Include="Assets\Photon\PhotonLibs\netstandard2.0" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras" />
      <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
+     <Folder Include="Assets\Models\Monster_Orc (Troll)\Meshes" />
      <Folder Include="Assets\Photon\PhotonLibs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <Folder Include="Assets\Models\Blender" />
@@ -452,6 +459,7 @@
      <None Include="Assets\Models\PROMETEO - Car Controller\Fonts\Licence.txt" />
      <Folder Include="Assets\Models\DestructibleWallGenerator\DWG" />
      <Folder Include="Assets\SystemFiles" />
+     <Folder Include="Assets\Models\Monster_Orc (Troll)\Prefabs" />
      <None Include="Library\PackageCache\com.unity.modules.ui@1.0.0\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Folder Include="Assets\Models\DinV\Dynamic Space Background" />

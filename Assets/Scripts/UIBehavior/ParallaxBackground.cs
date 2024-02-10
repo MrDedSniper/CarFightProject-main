@@ -7,6 +7,8 @@ public class ParallaxBackground : MonoBehaviour
     [SerializeField] private Image _parallax1;
     [SerializeField] private Image _parallax2;
     [SerializeField] private Image _parallax3;
+    [SerializeField] private Image _blackImageBG;
+    
     private Vector3 _startPosition1;
     private Vector3 _endPosition1;
     private Vector3 _startPosition2;
@@ -17,9 +19,9 @@ public class ParallaxBackground : MonoBehaviour
     private float _speed2 = 2f;
     private float _speed3 = 4f;
 
-    void Start()
+    private void Start()
     {
-        _startPosition1 = new Vector3(0, 500, 0);
+        _startPosition1 = new Vector3(0, 450, 0);
         _endPosition1 = new Vector3(0, 150, 0);
 
         _startPosition2 = new Vector3(150, 0, 0);
@@ -29,14 +31,14 @@ public class ParallaxBackground : MonoBehaviour
         _endPosition3 = new Vector3(0, 0, 0);
     }
 
-    void Update()
+    private void Update()
     {
         MoveToPosition(_parallax1, _startPosition1, _endPosition1, _speed1);
         MoveToPosition(_parallax2, _startPosition2, _endPosition2, _speed2);
         MoveToPosition(_parallax3, _startPosition3, _endPosition3, _speed3);
     }
 
-    void MoveToPosition(Image image, Vector3 startPosition, Vector3 endPosition, float speed)
+    private void MoveToPosition(Image image, Vector3 startPosition, Vector3 endPosition, float speed)
     {
         float distance = Vector3.Distance(image.rectTransform.localPosition, endPosition);
         float duration = distance / speed;
@@ -51,4 +53,10 @@ public class ParallaxBackground : MonoBehaviour
             endPosition = temp;
         }
     }
+
+    private void TurnOnBlackImage()
+    {
+        _blackImageBG.gameObject.SetActive(true);
+    }
+    
 }
