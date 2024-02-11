@@ -2,35 +2,39 @@ using UnityEngine;
 
 public class ShootController : MonoBehaviour
 {
-    public Transform gunTip; // точка выстрела
-    public GameObject bulletPrefab; // префаб пули
-    public float bulletSpeed = 10f; // скорость пули
-    public float fireRate = 0.5f; // скорострельность
-    private float nextFireTime = 0f; // время следующего выстрела
-    private Animator animator; // аниматор
-
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    public Transform gunTip;
+    public float fireRate = 0.05f;
+    private float nextFireTime = 0f;
+    [SerializeField] private ParticleSystem _muzzleFlash;
+    [SerializeField] internal int _ammoCount = 100;
 
     private void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFireTime)
+        if (Input.GetMouseButtonDown(0) && Time.time > nextFireTime && _ammoCount > 0)
         {
             nextFireTime = Time.time + fireRate;
             Shoot();
+            _ammoCount--;
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            // Прекращаем стрельбу
+            // Дополнительные действия, если необходимо
         }
     }
 
     private void Shoot()
     {
-        animator.SetTrigger("Shoot"); // запускаем анимацию выстрела
+        RaycastHit hit;
+        if (Physics.Raycast(gunTip.position, gunTip.forward, out hit))
+        {
+            // Здесь можно добавить логику для обработки попадания в объект
+        }
 
-        GameObject bullet = Instantiate(bulletPrefab, gunTip.position, gunTip.rotation); // создаем пулю
-        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-        bulletRb.velocity = transform.forward * bulletSpeed; // задаем скорость пули
-
-        Destroy(bullet, 3f); // удаляем пулю через 3 секунды
+        if (_muzzleFlash != null)
+        {
+            _muzzleFlash.Play(); // Воспроизводим партикл систему выстрела
+        }
     }
 }

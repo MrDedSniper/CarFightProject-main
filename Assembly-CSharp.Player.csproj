@@ -45,9 +45,12 @@
     <Analyzer Include="F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGDestroyer.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGTagManager.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
      <Compile Include="Assets\Scripts\EnemiesAIBehavoir\EnemyRobotAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Scripts\GameSystems\CameraScripts\DeactivateCameraIfNotMine.cs" />
@@ -57,6 +60,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGCreateBrick.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
@@ -76,6 +80,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\AccountDataWindowBase.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\Scripts\GameSystems\RotateSkybox.cs" />
@@ -92,11 +97,16 @@
      <Compile Include="Assets\Scripts\GameSystems\CameraScripts\CameraController.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGColliderEnabler.cs" />
      <Compile Include="Assets\Scripts\CarBehavior\CarController.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\UIAmmo.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\CameraFreeRoam.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
      <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Scripts\EnemiesAIBehavoir\SearchingTarget.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
@@ -106,6 +116,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\WarningsScripts.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\SignInWindow.cs" />
@@ -113,6 +124,7 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\HealthbarOnScene.cs" />
      <Compile Include="Assets\Scripts\EnemiesAIBehavoir\EnemiesSpawner.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\PlayerItem.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\UISoundsManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
@@ -125,6 +137,8 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGBuilder.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\RoomItem.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\DoNotRotate.cs" />
@@ -141,11 +155,13 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Models\Destructible Column Asset\Scripts\DamageOutputScript.cs" />
      <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Scripts\EconomyScripts\ScrapCurrency.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\UIHealthbar.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\UIElementHandler.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+     <Compile Include="Assets\Scripts\UIBehavior\TimerController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Scripts\CarBehavior\DeathSystem.cs" />
      <Compile Include="Assets\Scripts\EconomyScripts\ShopBehavior.cs" />

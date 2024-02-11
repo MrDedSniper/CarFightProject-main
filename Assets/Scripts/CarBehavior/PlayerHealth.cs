@@ -9,6 +9,9 @@ using Photon.Pun;
 
 internal class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem _smoke;
+    [SerializeField] private ParticleSystem _deathExplotion;
+    
     private HealthbarOnScene _healthbarOnScene;
     private CarController _carController;
     private DeathSystem _deathSystem;
@@ -86,6 +89,12 @@ internal class PlayerHealth : MonoBehaviour
             });
         
         photonView.RPC("UpdateHealth", RpcTarget.Others, _currentHealth);
+
+        if (_currentHealth <= _maxHealth / 2)
+        {
+            _smoke.Play();
+        }
+        
         
         if (_currentHealth <= 0)
         {
@@ -104,7 +113,7 @@ internal class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Die");
+        _deathExplotion.Play();
         _deathSystem.StartDeathAnimation();
     }
 }

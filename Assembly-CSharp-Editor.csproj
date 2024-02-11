@@ -45,9 +45,11 @@
     <Analyzer Include="F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Editor\CFX_SpawnSystemEditor.cs" />
      <Compile Include="Assets\Models\PROMETEO - Car Controller\Editor\PrometeoEditor.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Editor\DWGEditor.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />
+     <Compile Include="Assets\Models\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\clientcommon.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\i3.es.txt" />
@@ -128,6 +130,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\mergetool.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\clientcommon.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\cm.en.txt" />
+     <Folder Include="Assets\Models\JMO Assets\WarFX\Editor" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\i3.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\configurehelper.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\plastic-gui.zh-Hans.txt" />
@@ -152,6 +155,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\configurehelper.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\xdiff.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Localization\differences.zh-Hant.txt" />
+     <Folder Include="Assets\Models\JMO Assets\Cartoon FX Easy Editor\Editor" />
      <Reference Include="UnityEngine">
      <HintPath>F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
