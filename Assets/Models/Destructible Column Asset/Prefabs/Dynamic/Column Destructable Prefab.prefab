@@ -1348,9 +1348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c68ca601f73624084fa9941517f712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unbrokenColumn: {fileID: 1660022287205452}
-  brokenColumn: {fileID: 1194467231967232}
-  isBroken: 0
+  _unbrokenColumn: {fileID: 1660022287205452}
+  _brokenColumn: {fileID: 1194467231967232}
+  _isBroken: 0
+  _columnHp: 15
 --- !u!65 &3186224874840931596
 BoxCollider:
   m_ObjectHideFlags: 0

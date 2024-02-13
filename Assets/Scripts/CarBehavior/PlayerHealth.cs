@@ -16,6 +16,7 @@ internal class PlayerHealth : MonoBehaviour
     private CarController _carController;
     private DeathSystem _deathSystem;
     private UIHealthbar _uiHealthbar;
+    public ShakeEffectForUI _shakeEffectForUI;
     
     private PlayerItem _playerItem;
     internal float _currentHealth;
@@ -30,6 +31,7 @@ internal class PlayerHealth : MonoBehaviour
         _carController = FindObjectOfType<CarController>();
         _uiHealthbar = FindObjectOfType<UIHealthbar>();
         _healthbarOnScene = FindObjectOfType<HealthbarOnScene>();
+        _shakeEffectForUI = FindObjectOfType<ShakeEffectForUI>();
         
         photonView = GetComponent<PhotonView>();
         _playerItem = FindObjectOfType<PlayerItem>();
@@ -67,6 +69,7 @@ internal class PlayerHealth : MonoBehaviour
             float speed = _carController._currentSpeed;
             float damage = CalculateDamage(speed);
             TakeDamage(damage);
+            _shakeEffectForUI.StartShake();
         }
     }
     

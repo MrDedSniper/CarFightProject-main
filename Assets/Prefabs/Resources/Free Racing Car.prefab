@@ -607,6 +607,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1743307871048712215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3534091172704963595}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3534091172704963595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743307871048712215}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8950174861577962225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083610552108119527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _smoke: {fileID: 2334242517263355264}
   _deathExplotion: {fileID: 8950174861558564785}
+  _shakeEffectForUI: {fileID: 0}
 --- !u!1 &3830153026183825918
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2246,7 @@ GameObject:
   - component: {fileID: 1616227773974629483}
   - component: {fileID: 2481253289351563181}
   - component: {fileID: 808853870506736211}
+  - component: {fileID: 7887684746733488181}
   m_Layer: 0
   m_Name: WeaponSystem
   m_TagString: Untagged
@@ -2251,9 +2284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36fda8b523c81748a27fd8594a82862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _columnBreakScript: {fileID: 0}
   gunTip: {fileID: 2773727504618858356}
-  fireRate: 0.2
-  _muzzleFlash: {fileID: 0}
+  fireRate: 0.1
+  _muzzleFlash: {fileID: 130187370292748950}
+  _lightFromShot: {fileID: 0}
+  _ammoCount: 100
 --- !u!95 &808853870506736211
 Animator:
   serializedVersion: 5
@@ -2275,6 +2311,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7887684746733488181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8727586546196326433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8745896c5afce408d24fb43388f3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitParticle: {fileID: 0}
 --- !u!1 &8997188270088437079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2522,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100006, guid: 0661276422528d74d8c9894abad93242, type: 3}
       propertyPath: m_Name
-      value: WFX_MF Spr RIFLE3
+      value: ParticleShot
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 0661276422528d74d8c9894abad93242, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2515,12 +2564,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 0661276422528d74d8c9894abad93242, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 0661276422528d74d8c9894abad93242, type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 0661276422528d74d8c9894abad93242, type: 3}
       propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: 0661276422528d74d8c9894abad93242, type: 3}
+      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: 0661276422528d74d8c9894abad93242, type: 3}
@@ -2547,11 +2604,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 0661276422528d74d8c9894abad93242, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0661276422528d74d8c9894abad93242, type: 3}
+--- !u!198 &130187370292748950 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19800004, guid: 0661276422528d74d8c9894abad93242, type: 3}
+  m_PrefabInstance: {fileID: 130187370311236946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &130187370311100372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 0661276422528d74d8c9894abad93242, type: 3}
@@ -2567,7 +2630,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 6f8449a4663a4fd44b6140772d4f39f9, type: 3}
       propertyPath: m_Name
-      value: WFX_SmokeGrenade AlphaBlend Black
+      value: ParticleSmoke
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6f8449a4663a4fd44b6140772d4f39f9, type: 3}
       propertyPath: m_LocalScale.x
@@ -2621,6 +2684,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6f8449a4663a4fd44b6140772d4f39f9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 6f8449a4663a4fd44b6140772d4f39f9, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -2628,6 +2695,14 @@ PrefabInstance:
     - target: {fileID: 19800002, guid: 6f8449a4663a4fd44b6140772d4f39f9, type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 6f8449a4663a4fd44b6140772d4f39f9, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 6f8449a4663a4fd44b6140772d4f39f9, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2716,7 +2791,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
       propertyPath: m_Name
-      value: WFX_ExplosiveSmokeGround Big
+      value: ParticleExplotion
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2758,6 +2833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -2774,6 +2853,14 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 19800008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -2785,6 +2872,22 @@ PrefabInstance:
     - target: {fileID: 19800012, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 19900000, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
       propertyPath: m_Materials.Array.size
@@ -2816,7 +2919,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 400008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3534091172704963595}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
 --- !u!198 &8950174861558564785 stripped

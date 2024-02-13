@@ -13,6 +13,6 @@ public class UIAmmo : MonoBehaviour
 
     internal void UpdateAmmo()
     {
-        _ammoText.text = Mathf.Round(_shootController._ammoCount).ToString();
+        _ammoText.text = _shootController._ammoCount.ToString();
     }
 }

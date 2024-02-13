@@ -47,9 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c68ca601f73624084fa9941517f712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unbrokenColumn: {fileID: 1751486378901812589}
-  brokenColumn: {fileID: 5480106614617383154}
-  isBroken: 0
+  _unbrokenColumn: {fileID: 1751486378901812589}
+  _brokenColumn: {fileID: 5480106614617383154}
+  _isBroken: 0
+  _columnHp: 15
 --- !u!65 &7055027730963094193
 BoxCollider:
   m_ObjectHideFlags: 0

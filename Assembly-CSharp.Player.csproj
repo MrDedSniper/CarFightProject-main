@@ -45,18 +45,18 @@
     <Analyzer Include="F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\UIBehavior\ShakeEffectForUI.cs" />
      <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGDestroyer.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGTagManager.cs" />
-     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Models\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
+     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Scripts\EnemiesAIBehavoir\EnemyRobotAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Scripts\GameSystems\CameraScripts\DeactivateCameraIfNotMine.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\SpeedometrScript.cs" />
-     <Compile Include="Assets\Scripts\WeaponsScripst\ShootController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -80,6 +80,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\AccountDataWindowBase.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\Scripts\EnvironmentScripts\ColumnBreakScript.cs" />
      <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -109,6 +110,7 @@
      <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\Scripts\WeaponsScripts\BulletBehavior.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
      <Compile Include="Assets\Scripts\EconomyScripts\ProductItemUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
@@ -128,12 +130,10 @@
      <Compile Include="Assets\Scripts\NetworkScripts\PlayerItem.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\UISoundsManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
-     <Compile Include="Assets\Models\Destructible Column Asset\Scripts\ColumnBreakScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\NetworkScripts\LobbyManager.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\UISound.cs" />
      <Compile Include="Assets\Models\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\WeaponsScripst\BulletBehavior.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts\DWGBuilder.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -161,9 +161,11 @@
      <Compile Include="Assets\Scripts\UIBehavior\UIHealthbar.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\UIElementHandler.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+     <Compile Include="Assets\Scripts\WeaponsScripts\RaycastShootHitPointTracker.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\TimerController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Scripts\CarBehavior\DeathSystem.cs" />
+     <Compile Include="Assets\Scripts\WeaponsScripts\ShootController.cs" />
      <Compile Include="Assets\Scripts\EconomyScripts\ShopBehavior.cs" />
      <Reference Include="UnityEngine">
      <HintPath>F:\Program Files\UnityHub\2022.3.11f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
