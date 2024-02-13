@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class EnemiesSpawner : MonoBehaviour
 {
-    public Transform[] spawnPoints; // Массив точек спавна
-    public GameObject enemyPrefab; // Префаб врага
+    public Transform[] spawnPoints;
+    public GameObject enemyPrefab;
     private int maxEnemies = 20;
     private int minEnemies = 15;
     private bool spawningEnabled = true;

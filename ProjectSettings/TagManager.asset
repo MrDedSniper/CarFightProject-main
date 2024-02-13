@@ -15,6 +15,7 @@ TagManager:
   - DontDestroyMusic
   - SoundsSource
   - EnemyRobot
+  - AmmoCrate
   layers:
   - Default
   - TransparentFX

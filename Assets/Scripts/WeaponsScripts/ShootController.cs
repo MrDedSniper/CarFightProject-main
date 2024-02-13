@@ -67,4 +67,10 @@ public class ShootController : MonoBehaviour
             _uiAmmo.UpdateAmmo();
         }
     }
+
+    internal void GiveMaxAmmo()
+    {
+        _ammoCount = 100;
+        _uiAmmo.UpdateAmmo();
+    }
 }

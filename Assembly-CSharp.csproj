@@ -66,6 +66,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\Scripts\WeaponsScripts\AmmoCrateSpawner.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\UIScrap.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\MainMenusSounds.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\ThrowObject.cs" />
@@ -162,6 +163,7 @@
      <Compile Include="Assets\Scripts\UIBehavior\UIElementHandler.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\Scripts\WeaponsScripts\RaycastShootHitPointTracker.cs" />
+     <Compile Include="Assets\Scripts\WeaponsScripts\AmmoCrateBehavior.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\TimerController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Scripts\CarBehavior\DeathSystem.cs" />
@@ -170,6 +172,7 @@
      <Folder Include="Assets" />
      <None Include="Library\PackageCache\com.unity.settings-manager@2.0.1\package.json" />
      <None Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0\package.json" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Library\PackageCache\com.unity.modules.jsonserialize@1.0.0\package.json" />
      <Folder Include="Library\PackageCache\com.unity.test-framework@1.1.33" />
@@ -192,6 +195,8 @@
      <Folder Include="Assets\Models\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes" />
      <None Include="Assets\Models\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
      <None Include="Library\PackageCache\com.unity.modules.ai@1.0.0\package.json" />
+     <Folder Include="Assets\Models\Hovl Studio\Resources\Settings" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs\AoE effects" />
      <Folder Include="Assets\Scripts\GameSystems" />
      <Folder Include="Library\PackageCache\com.unity.modules.animation@1.0.0" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes" />
@@ -238,6 +243,7 @@
      <Folder Include="Assets\Models\JMO Assets\WarFX\Demo\Assets" />
      <None Include="Assets\Models\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Meshes" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs\Character auras" />
      <Folder Include="Assets\Models\Monster_Orc (Troll)\Material" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\_Effects\Bullet Impacts\+ Bullet Hole\Unlit" />
      <Folder Include="Assets\Models\Monster_Orc (Troll)\Texture" />
@@ -251,6 +257,7 @@
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.9.1" />
      <Folder Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Gizmos" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Textures\Color Variations" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Materials" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.21\ValidationConfig.json" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Fonts" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35" />
@@ -268,6 +275,7 @@
      <Folder Include="Assets\Models\LowPolyRoadPack\Demo" />
      <Folder Include="Assets\PlayfabAccountUI\Prefabs" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Demo scene" />
      <Folder Include="Assets\Photon\PhotonRealtime\Demos" />
      <Folder Include="Library\PackageCache\com.unity.modules.screencapture@1.0.0" />
      <None Include="Library\PackageCache\com.unity.visualscripting@1.9.1\package.json" />
@@ -305,6 +313,7 @@
      <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0" />
      <None Include="Library\PackageCache\com.unity.feature.development@1.0.1\package.json" />
      <Folder Include="Assets\Scripts\AudioScripts" />
+     <Folder Include="Assets\Models\Hovl Studio\Resources" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Scenes" />
      <Folder Include="Assets\TextMesh Pro" />
      <None Include="Assets\Models\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
@@ -317,6 +326,7 @@
      <Folder Include="Assets\Models\JMO Assets\WarFX\Desktop" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Desktop\Materials\MuzzleFlashes" />
      <Folder Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs\Portals" />
      <None Include="Library\PackageCache\com.unity.ide.rider@3.0.25\package.json" />
      <None Include="Assets\Models\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Shaders" />
@@ -375,9 +385,12 @@
      <Folder Include="Library\PackageCache\com.unity.modules.particlesystem@1.0.0" />
      <Folder Include="Assets\Models\DestructibleWallGenerator\Example" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Textures" />
      <Folder Include="Library\PackageCache\com.unity.settings-manager@2.0.1" />
      <Folder Include="Assets\Models\DestructibleWallGenerator" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs\Magic circles" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Materials" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs\Hits and explosions" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Textures\Mobile Devices" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.21\ValidationExceptions.json" />
@@ -409,6 +422,7 @@
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Animation" />
+     <Folder Include="Assets\Models\Hovl Studio" />
      <Folder Include="Assets\Models\Destructible Column Asset\Textures" />
      <Folder Include="Library\PackageCache\com.unity.modules.androidjni@1.0.0" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.deps.json" />
@@ -448,6 +462,7 @@
      <Folder Include="Assets\Photon\PhotonChat" />
      <Folder Include="Library\PackageCache\com.unity.ide.rider@3.0.25" />
      <None Include="Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0\package.json" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs\Slash effects" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Meshes" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Materials" />
@@ -491,6 +506,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\Models\Low Poly Weapons VOL.1" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Desktop\Textures\Bullet Holes" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack" />
      <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0" />
      <Folder Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib" />
      <None Include="Library\PackageCache\com.unity.modules.director@1.0.0\package.json" />
@@ -516,6 +532,7 @@
      <None Include="Assets\Models\JMO Assets\WarFX\!WarFX Readme.txt" />
      <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
      <Folder Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.21" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Models" />
      <Folder Include="Assets\Models\ARCADE - FREE Racing Car\Skybox\Day\Textures" />
      <None Include="Library\PackageCache\com.unity.modules.androidjni@1.0.0\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -552,6 +569,7 @@
      <Folder Include="Assets\Models\LowPolyRoadPack\Prefabs" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\_Effects (Mobile)" />
      <None Include="Assets\Models\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
+     <None Include="Assets\Models\Hovl Studio\Magic effects pack\Demo scene\Readme.txt" />
      <Folder Include="Assets\Photon\PhotonLibs\WebSocket" />
      <None Include="Assets\Models\Destructible Column Asset\Version2_ReadMe.txt" />
      <Folder Include="Assets\PlayfabAccountUI\UI\Shapes" />
@@ -579,6 +597,7 @@
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Desktop\Textures\Smoke" />
      <Folder Include="Assets\Scripts\NetworkScripts" />
+     <Folder Include="Assets\Models\Hovl Studio\Magic effects pack\Prefabs\Magic shields" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Effects\Particle Systems\Materials" />
      <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\package.json" />
      <Folder Include="Assets\Models\DestructibleWallGenerator\DWG\Scripts" />

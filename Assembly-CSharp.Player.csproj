@@ -66,6 +66,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\Scripts\WeaponsScripts\AmmoCrateSpawner.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\UIScrap.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\MainMenusSounds.cs" />
      <Compile Include="Assets\Models\DestructibleWallGenerator\Example\Scripts\ThrowObject.cs" />
@@ -162,6 +163,7 @@
      <Compile Include="Assets\Scripts\UIBehavior\UIElementHandler.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\Scripts\WeaponsScripts\RaycastShootHitPointTracker.cs" />
+     <Compile Include="Assets\Scripts\WeaponsScripts\AmmoCrateBehavior.cs" />
      <Compile Include="Assets\Scripts\UIBehavior\TimerController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Scripts\CarBehavior\DeathSystem.cs" />

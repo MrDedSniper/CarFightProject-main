@@ -465,6 +465,8 @@
 "Assets/Scripts/UIBehavior/UIElementHandler.cs"
 "Assets/Scripts/UIBehavior/UIHealthbar.cs"
 "Assets/Scripts/UIBehavior/UIScrap.cs"
+"Assets/Scripts/WeaponsScripts/AmmoCrateBehavior.cs"
+"Assets/Scripts/WeaponsScripts/AmmoCrateSpawner.cs"
 "Assets/Scripts/WeaponsScripts/BulletBehavior.cs"
 "Assets/Scripts/WeaponsScripts/RaycastShootHitPointTracker.cs"
 "Assets/Scripts/WeaponsScripts/ShootController.cs"
