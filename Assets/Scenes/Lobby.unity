@@ -656,7 +656,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 314627398}
   m_HandleRect: {fileID: 314627397}
   m_Direction: 2
-  m_Value: 0.000026854288
+  m_Value: -0.00045652292
   m_Size: 0.99742025
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1562,7 +1562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.1363807}
+  m_AnchoredPosition: {x: 0, y: 1.1369481}
   m_SizeDelta: {x: 0, y: 440.51}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &249624703
@@ -1962,6 +1962,8 @@ MonoBehaviour:
   _privateRoomText: {fileID: 1998860081}
   _levelText: {fileID: 102171858}
   _coinsText: {fileID: 26722672}
+  _createRoomButton: {fileID: 66286992}
+  _buttonText: {fileID: 148716107}
   roomItemPrefab: {fileID: -3687886420433530223, guid: 669895560c446b2428b199622f0f651f, type: 3}
   contentObject: {fileID: 249624702}
   timeBetweenUpdates: 1.5

@@ -23,6 +23,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     [SerializeField] private TMP_Text _privateRoomText;
     [SerializeField] private TMP_Text _levelText;
     [SerializeField] private TMP_Text _coinsText;
+    
+    [SerializeField] private Button _createRoomButton;
+    [SerializeField] private TMP_Text _buttonText;
 
     private bool _isShopOpen = false;
 
@@ -53,6 +56,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         _mainMenusSounds = FindObjectOfType<MainMenusSounds>();
         _mainMenusSounds.SignForSoundsSource();
+        
+        _createRoomButton.interactable = false;
+        _buttonText.text = "Please, wait";
     }
 
     //Создание комнаты
@@ -203,6 +209,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.JoinLobby();
+        
+        _createRoomButton.interactable = true;
+        _buttonText.text = "Create Room";
     }
 
     private void UpdatePlayerList()
