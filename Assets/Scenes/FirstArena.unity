@@ -18087,7 +18087,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2095269080}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a245a6b43789134e81dc67349bee3b4, type: 3}
   m_Name: 
@@ -19251,11 +19251,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2017362361736067967, guid: 9ddbc098ac2c2284982f77759299a721, type: 3}
   m_PrefabInstance: {fileID: 1205634120}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &984622044 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 130187370300470994, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
-  m_PrefabInstance: {fileID: 2095269080}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &985693034
 GameObject:
@@ -39002,22 +38997,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 130187370311269360, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1697530889161073285, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
-      propertyPath: sceneViewId
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2079669882560596902, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: _playerSpawner
       value: 
       objectReference: {fileID: 1537603679}
-    - target: {fileID: 2481253289351563181, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
-      propertyPath: _lightFromShot
-      value: 
-      objectReference: {fileID: 984622044}
     - target: {fileID: 2727352638379544130, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: _directionalLight
       value: 
@@ -39028,7 +39011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.08
       objectReference: {fileID: 0}
     - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39066,17 +39049,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free Racing Car
       objectReference: {fileID: 0}
-    - target: {fileID: 3311311803080157842, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 5736772367466477252, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5736772367466477252, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5736772367466477252, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7887684746733488181, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: hitParticle

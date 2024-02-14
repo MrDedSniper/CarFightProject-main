@@ -250,6 +250,7 @@
      <None Include="Library\PackageCache\com.unity.timeline@1.7.5\package.json" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Demo" />
+     <Folder Include="Assets\Images\Effects" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Documentation" />
@@ -330,6 +331,7 @@
      <None Include="Library\PackageCache\com.unity.ide.rider@3.0.25\package.json" />
      <None Include="Assets\Models\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Shaders" />
+     <Folder Include="Assets\Prefabs\ParticleSystem" />
      <None Include="Library\PackageCache\com.unity.modules.video@1.0.0\package.json" />
      <Folder Include="Assets\Models" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\_Effects\Fire" />
@@ -379,6 +381,7 @@
      <Folder Include="Assets\Models\JMO Assets\WarFX\Desktop\Materials\Smoke" />
      <Folder Include="Assets\Models\DestructibleWallGenerator\Example\Prefabs" />
      <Folder Include="Library\PackageCache\com.unity.modules.uielements@1.0.0" />
+     <Folder Include="Assets\Models\Weapons_ChamferZone" />
      <None Include="Library\PackageCache\com.unity.visualscripting@1.9.1\ValidationExceptions.json" />
      <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -402,6 +405,7 @@
      <Folder Include="Assets\Models\PROMETEO - Car Controller\Prefabs" />
      <Folder Include="Assets\Scripts\EnvironmentScripts" />
      <Folder Include="Assets\Models\LowPolyRoadPack\Textures" />
+     <Folder Include="Assets\Models\Weapons_ChamferZone\Ammunition" />
      <None Include="Library\PackageCache\com.unity.modules.wind@1.0.0\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <Folder Include="Library\PackageCache\com.unity.ugui@1.0.0\Tests" />
@@ -477,6 +481,7 @@
      <Folder Include="Assets\Models\JMO Assets\WarFX\_Effects (Mobile)\Bullet Impacts\+ Bullet Hole\Lit" />
      <Folder Include="Assets\Models\JMO Assets\WarFX\Scripts" />
      <Folder Include="Assets\Models\DinV" />
+     <Folder Include="Assets\Models\Weapons_ChamferZone\Ammunition\textures" />
      <Folder Include="Assets\Audio" />
      <Folder Include="Assets\Audio\Car Engine Sound - i6 German Free\Assets\Audio" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_SDF_SSD.cginc" />
@@ -570,6 +575,7 @@
      <Folder Include="Assets\Models\JMO Assets\WarFX\_Effects (Mobile)" />
      <None Include="Assets\Models\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
      <None Include="Assets\Models\Hovl Studio\Magic effects pack\Demo scene\Readme.txt" />
+     <Folder Include="Assets\Models\Weapons_ChamferZone\Ammunition\Materials" />
      <Folder Include="Assets\Photon\PhotonLibs\WebSocket" />
      <None Include="Assets\Models\Destructible Column Asset\Version2_ReadMe.txt" />
      <Folder Include="Assets\PlayfabAccountUI\UI\Shapes" />
