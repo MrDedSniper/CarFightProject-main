@@ -112,7 +112,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43877144157353548}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa6476eaf473404408ec82fca69e8fe6, type: 3}
   m_Name: 
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 1
-  observableSearch: 2
+  observableSearch: 1
   ObservedComponents:
   - {fileID: 3320914079969056765}
   sceneViewId: 0
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3311311803080157842}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a245a6b43789134e81dc67349bee3b4, type: 3}
   m_Name: 
@@ -2227,7 +2227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1616227773974629483
 Transform:
   m_ObjectHideFlags: 0
