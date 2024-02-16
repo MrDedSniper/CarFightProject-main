@@ -305,13 +305,15 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             GameObject dontDestroyBg = GameObject.FindWithTag("DontDestroyBG");
             if (dontDestroyBg != null)
             {
-                Destroy(dontDestroyBg);
+                //Destroy(dontDestroyBg);
+                dontDestroyBg.SetActive(false);
             }
             
             GameObject dontDestroyObject = GameObject.FindWithTag("DontDestroyObject");
             if (dontDestroyObject != null)
             {
-                Destroy(dontDestroyObject);
+                //Destroy(dontDestroyObject);
+                dontDestroyObject.SetActive(false);
             }
             
             _mainMenusSounds.StartGameplayMusic();
